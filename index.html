@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZeroFM – Internet Radio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>
+<header><a class="logo" href="index.html">Zero<span style="color:var(--glow)">FM</span></a>
+<nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="listen.html">Listen Live</a><a href="schedule.html">Schedule</a><a href="shows.html">Shows</a><a href="djs.html">DJs</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></header>
+<section id="home">
+<span class="badge">ZeroFM · Internet Radio</span>
+<h1>The Beginning of Sound</h1>
+<p class="muted" style="font-size:20px">Streaming worldwide, 24/7.</p>
+<div class="bars" aria-hidden="true" id="bars"></div>
+<a class="btn" href="listen.html">Listen live</a> <a class="btn alt" href="schedule.html">See the schedule</a>
+</section>
+
+<section id="cards"><h2>Zero Cards</h2>
+<p>Open a pack, collect all 30 and fill your binder. Duplicates stack. Tilt a card to see the shine on rarer ones.</p>
+<div class="card np"><div><small>Collected</small><h3 id="cnt">0 / 30</h3><small id="pk"></small></div><button class="btn" id="open">Open a pack</button></div>
+<div class="binder" id="bind"></div>
+<p class="muted" style="margin-top:12px">Your collection is saved on this device for now.</p></section>
+<div class="ov" id="ov" hidden role="dialog" aria-modal="true" aria-label="Pack opening"><div class="ovin"><div class="fx" id="fx"></div><div class="pack" id="pack" hidden><div class="pt"></div>ZERO<small>CARDS</small></div><div class="hand" id="hand"></div><p class="cap" id="hint">Tap each card to reveal it.</p><div id="ctl"><button class="btn alt" id="rev" style="color:#eef2f8">Reveal all</button> <button class="btn" id="cls">Close</button></div></div></div>
+<div class="ov" id="vw" hidden role="dialog" aria-modal="true" aria-label="Card"><div class="ovin" id="vwin"></div></div>
+
+<footer>ZeroFM – Internet Radio · The Beginning of Sound</footer>
+<script src="site.js"></script>
+<script src="cards-data.js"></script>
+<script src="cards.js"></script>
+</body>
+</html>
